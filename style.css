@@ -1,0 +1,128 @@
+* {
+    --gameboard-border : 6px solid red;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #00FF9F;
+}
+.container {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#message {
+    margin: 14px 24px;
+    padding: 0 24px;
+    align-content: center;
+    background-color: #804040;
+    min-height: 48px;
+    width: calc(100% - 24px);
+    border-radius: 6px;
+    color: #12FF00;
+    font-weight: 900;
+    letter-spacing: 1.5pt;
+    display: flex;
+    flex-direction: row;
+}
+
+#result {
+    margin-left: auto;
+}
+
+.gameboard {
+    margin-top: 24px;
+    padding: 8px;
+    border: 6px dashed #414141;
+    width: auto;
+    aspect-ratio: 1 / 1;
+    flex: 1 1 auto;
+    background-color: #01d784;
+}
+
+.gameboard li {
+    list-style-type: none;
+    margin: 48px 0;
+}
+
+#players input {
+    margin: 8px 0;
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-size: 21px;
+    letter-spacing: 1.1pt;
+    border: 1px solid #00000091;
+
+}
+
+#players label {
+    letter-spacing: 1.4pt;
+    margin-left: 4px;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.row{
+    height: 33%;
+    border-bottom: var(--gameboard-border);
+    display: flex;
+    flex-direction: row;
+
+}
+
+.column{ 
+    height: 100%;
+    width: 100%;
+    border-right: var(--gameboard-border);
+    
+}
+
+.column svg {
+
+    height: 100%;
+    width: 100%;
+}
+
+.row:nth-child(3), .column:nth-child(3) {
+    border: none;
+}
+
+.controls {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button {
+    width: 100px;
+    padding: 18px 0px;
+    margin: 8px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.938);
+    text-align: center;
+}
+
+#restart {
+    display: none;
+    background-color: blue;
+}
+
+#start {
+    background-color: #1ebe1e;
+}
+
+#exit {
+    background-color: red;
+}

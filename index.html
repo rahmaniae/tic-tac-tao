@@ -7,7 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div id="message">
+            <p>Are you ready? Click 'Start'!</p>
+            <p id="result"></p>
+        </div>
+        <div class="gameboard">
+            <form id="players">
+                <ul>
+                    <li>
+                        <label for="player1">Enter Player One's name :</label>
+                        <input type="text" name="player1" id="player1" placeholder="Player one">
+                    </li>
+                    <li>
+                        <label for="player2">Enter Player Two's name :</label>
+                        <input type="text" name="player2" id="player2" placeholder="Player two">
+                    </li>
+                </ul>
+                
+
+            </form>
+        </div>
+        <div class="controls">
+            <button id="start">Start</button>
+            <button id="restart">Restart</button>
+            <button id="exit">Exit</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
